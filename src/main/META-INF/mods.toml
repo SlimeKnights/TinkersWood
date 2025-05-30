@@ -1,0 +1,17 @@
+modLoader="lowcodefml"
+loaderVersion="*"
+issueTrackerURL="https://github.com/SlimeKnights/TinkersWood/issues"
+license="MIT"
+[[mods]]
+    modId="tinkers_wood"
+    version="1.0.0"
+    displayName="Tinkers' Wood"
+    description='''
+    An addon for Tinkers' Construct adding back the removed wood material variants.
+    '''
+[[dependencies.tinkers_wood]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="[3.9.2,)"
+    ordering="AFTER"
+    side="BOTH"
