@@ -20,6 +20,6 @@ RMDIR /q /s build
 REM create symlinks so resources live update. Using Json Things for testing but its not needed at runtime.
 mkdir run\thingpacks
 cd run\thingpacks
-IF NOT EXIST TinkersWood mklink /J TinkersWood ..\..\src
-IF NOT EXIST TinkersWoodGenerated mklink /J TinkersWoodGenerated ..\..\generated
+IF NOT EXIST TinkersWood mklink /J TinkersWood ..\..\src\main
+IF NOT EXIST TinkersWoodGenerated mklink /J TinkersWoodGenerated ..\..\src\generated
 cd ..\..
