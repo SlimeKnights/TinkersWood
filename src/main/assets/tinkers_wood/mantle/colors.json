@@ -1,0 +1,12 @@
+{
+  "material.tconstruct.wood": {
+    "oak":      "#AF8F55",
+    "spruce":   "#7A5A34",
+    "birch":    "#C8B77A",
+    "jungle":   "#AA7954",
+    "dark_oak": "#492F17",
+    "mangrove": "#7F4234",
+    "cherry":   "#E7C2BB",
+    "acacia":   "#AD5D32"
+  }
+}

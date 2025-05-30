@@ -1,0 +1,10 @@
+{
+  "_translators_comment": "Translated by Abiel",
+
+  "material.tconstruct.wood.oak":      "Madeira de Carvalho",
+  "material.tconstruct.wood.spruce":   "Madeira de Pinheiro",
+  "material.tconstruct.wood.birch":    "Madeira de Eucalipto",
+  "material.tconstruct.wood.jungle":   "Madeira da Selva",
+  "material.tconstruct.wood.acacia":   "Madeira de Acacia",
+  "material.tconstruct.wood.dark_oak": "Madeira de Carvalho Escuro"
+}
