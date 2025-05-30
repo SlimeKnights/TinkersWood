@@ -8,9 +8,9 @@ REM create dummy jar file with just meta-inf
 IF EXIST build RMDIR /q /s build
 IF EXIST "run\mods\Tinker-Wood-Dummy.jar" DEL "run\mods\Tinker-Wood-Dummy.jar"
 mkdir build
-XCOPY src\main\META-INF build\META-INF /s /i /q
-copy src\main\pack.mcmeta build
-copy src\main\pack.png build
+XCOPY src\main\resources\META-INF build\META-INF /s /i /q
+copy src\main\resources\pack.mcmeta build
+copy src\main\resources\pack.png build
 cd build
 jar --create --file ../run/mods/Tinker-Wood-Dummy.jar *
 cd ..
@@ -20,6 +20,6 @@ RMDIR /q /s build
 REM create symlinks so resources live update. Using Json Things for testing but its not needed at runtime.
 mkdir run\thingpacks
 cd run\thingpacks
-IF NOT EXIST TinkersWood mklink /J TinkersWood ..\..\src\main
+IF NOT EXIST TinkersWood mklink /J TinkersWood ..\..\src\main\resources
 IF NOT EXIST TinkersWoodGenerated mklink /J TinkersWoodGenerated ..\..\src\generated
 cd ..\..

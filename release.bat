@@ -5,7 +5,7 @@ IF EXIST "Tinker-Wood-#.#.#.jar" DEL "Tinker-Wood-#.#.#.jar"
 MKDIR build
 
 REM Copy required files into build directory
-XCOPY src\main build /s /i /q
+XCOPY src\main\resources build /s /i /q
 XCOPY src\generated\assets build\assets /s /i /q
 
 REM Zipping contents
