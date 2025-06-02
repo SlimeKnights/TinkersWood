@@ -18,7 +18,7 @@ ROOT_PATH = "../../generated"
 LOG_PATH = "../../../run/logs"
 """Path to create log files for datagen, set to None to skip"""
 
-MOD_ID = "tinkerswood"
+MOD_ID = "tinkers_wood"
 """Mod ID for all resources generated"""
 
 if __name__ == "__main__":
