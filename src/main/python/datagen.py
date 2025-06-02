@@ -7,6 +7,7 @@ from tinkerswood.logger import setupLogging
 from tinkerswood.woods import WOODS
 
 from tinkerswood.render_infos import RenderInfoGenerator
+from tinkerswood.tags import TagGenerator
 
 ROOT_PATH = "../../generated"
 """Target folder for datagen"""
@@ -32,7 +33,14 @@ if __name__ == "__main__":
         variant = name if mod == "minecraft" else f"{mod}_{variant}"
         wood["variant"] = variant
         wood["material"] = f"tconstruct:wood#{variant}"
+        
+        # generate IDs if not set
+        if "planks_id" not in wood:
+            wood["planks_id"] = f"{mod}:{name}_planks"
+        if "log_tag" not in wood:
+            wood["log_tag"] = f"{mod}:{name}_logs"
     
+    # material render infos
     with RenderInfoGenerator(cache) as gen:
         for wood in WOODS:
             gen.wood(wood["variant"], wood["palette"])
@@ -44,6 +52,14 @@ if __name__ == "__main__":
         }
     }
     cache.saveJson(colors, f"assets/{MOD_ID}/mantle/colors", sortKeys=False)
+    
+    # tags ensure wood does not count default variant
+    with TagGenerator(cache) as gen:
+        gen.add("items", "tconstruct", "wood_variants/planks", *[wood["planks_id"] for wood in WOODS])
+        logs = ["#" + wood["log_tag"] for wood in WOODS if not wood["override_log"]]
+        if len(logs) > 0:
+            gen.add("items", "tconstruct", "wood_variants/logs", *logs)
+            
     
     # end of datagen, save the cache file
     cache.finalize()

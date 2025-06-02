@@ -1,9 +1,14 @@
 # wood config:
 
+# required:
 #   mod_id:       root mod, used for log/plank detection and prefixes the wood name
 #   name:         name of the wood variant
 #   override_log: if true, Tinkers' Construct ships a log recipe to override
 #   palette:      mapping from grey values to hex colors for the generator
+
+# optinal:
+#   plank_id: Block ID for the planks block. If unset, uses "<mod_id>:<name>_planks"
+#   log_tag:  Item tag ID for the log tag. If unset, uses "<mod_id>:<name>_logs"
 
 WOODS = [
     # vanilla
