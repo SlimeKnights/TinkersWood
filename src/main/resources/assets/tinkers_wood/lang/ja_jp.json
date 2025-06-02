@@ -1,9 +1,10 @@
 {
-  "material.tconstruct.wood.oak":      "オークの木",
-  "material.tconstruct.wood.spruce":   "トウヒの木",
-  "material.tconstruct.wood.birch":    "シラカバの木",
-  "material.tconstruct.wood.jungle":   "ジャングルの木",
-  "material.tconstruct.wood.acacia":   "アカシアの木",
-  "material.tconstruct.wood.dark_oak": "ダークオークの木"
+  "material.tconstruct.wood.oak": "オークの木",
+  "material.tconstruct.wood.spruce": "トウヒの木",
+  "material.tconstruct.wood.birch": "シラカバの木",
+  "material.tconstruct.wood.jungle": "ジャングルの木",
+  "material.tconstruct.wood.acacia": "アカシアの木",
+  "material.tconstruct.wood.dark_oak": "ダークオークの木",
+  "material.tconstruct.wood.mangrove": "マングローブの木",
+  "material.tconstruct.wood.cherry": "サクラの木"
 }
-
