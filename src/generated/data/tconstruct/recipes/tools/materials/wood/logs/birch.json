@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "minecraft:birch_logs"
+  },
+  "material": "tconstruct:wood#birch",
+  "needed": 1,
+  "value": 4,
+  "leftover": "minecraft:birch_planks"
+}

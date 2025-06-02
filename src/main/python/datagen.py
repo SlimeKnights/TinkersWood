@@ -1,5 +1,7 @@
 import logging
 from time import perf_counter
+from typing import Dict, List
+
 from tinkerswood.cache import CachedOutput
 from tinkerswood.logger import setupLogging
 
@@ -8,6 +10,7 @@ from tinkerswood.woods import WOODS
 
 from tinkerswood.render_infos import RenderInfoGenerator
 from tinkerswood.tags import TagGenerator
+from tinkerswood.recipes import RecipeGenerator
 
 ROOT_PATH = "../../generated"
 """Target folder for datagen"""
@@ -59,6 +62,34 @@ if __name__ == "__main__":
         logs = ["#" + wood["log_tag"] for wood in WOODS if not wood["override_log"]]
         if len(logs) > 0:
             gen.add("items", "tconstruct", "wood_variants/logs", *logs)
+    
+    # add all 3 relevant recipes
+    with RecipeGenerator(cache) as gen:
+        # determine how many times each mod shows up
+        modCount: Dict[str, int] = {}
+        for wood in WOODS:
+            mod = wood["mod_id"]
+            modCount[mod] = modCount.get(mod, 0) + 1
+        
+        # add all woods
+        for wood in WOODS:
+            localPath: str
+            mod = wood["mod_id"]
+            variant = wood["variant"]
+            localPath = variant if modCount[mod] == 1 else f"{mod}/{wood['name']}"
+            
+            # planks to material variant
+            gen.material(wood["material"], {"item": wood["planks_id"]}, MOD_ID, "planks", localPath)
+            
+            # logs to material variant, might need to override a tconstruct recipe
+            logPath: List[str]
+            if wood["override_log"]:
+                logPath = ["tconstruct", "tools/materials/wood/logs", variant]
+            else:
+                logPath = [MOD_ID, "logs", localPath]
+            gen.material(wood["material"], {"tag": wood["log_tag"]}, *logPath, value=4, leftover=wood["planks_id"])
+            # planks to embellishment
+            gen.woodEmbellishment(wood["material"], wood["planks_id"], MOD_ID, "embellishment", localPath)
             
     
     # end of datagen, save the cache file

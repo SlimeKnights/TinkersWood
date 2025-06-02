@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "minecraft:mangrove_logs"
+  },
+  "material": "tconstruct:wood#mangrove",
+  "needed": 1,
+  "value": 4,
+  "leftover": "minecraft:mangrove_planks"
+}
