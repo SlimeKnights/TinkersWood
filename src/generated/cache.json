@@ -1,1 +1,11 @@
-{}
+{
+  "assets/tconstruct/tinkering/materials/wood/acacia.json": "c56e09ce9645d03c724e3c4ce867a93f61738786cd967e1adc94efc86e5118e0",
+  "assets/tconstruct/tinkering/materials/wood/birch.json": "03a3cd744f6d6d8def2d89562e0ab046831960f8721315e4036273cea0a33ed0",
+  "assets/tconstruct/tinkering/materials/wood/cherry.json": "92fab35a3f73e49f8aec9e0002df090fb194298c13b2280c6b6b0cb5b573feda",
+  "assets/tconstruct/tinkering/materials/wood/dark_oak.json": "ac347af8f5b71374f934a3adcb51dc4f819ffb2c3a42a06e104e0644fc142dc2",
+  "assets/tconstruct/tinkering/materials/wood/jungle.json": "4de7424d9c98be5295f6bbe59be6179767192bad563cd33e7542d8851d6de6d2",
+  "assets/tconstruct/tinkering/materials/wood/mangrove.json": "85a1a5772f09a02e501a092e21639ae2e999d3d1daa614d384d430b0cefbf957",
+  "assets/tconstruct/tinkering/materials/wood/oak.json": "e446cdfa331185104d9bffba79da896a152f4c7d76a8f24bb9516422dbebf437",
+  "assets/tconstruct/tinkering/materials/wood/spruce.json": "691a5f28682f7e47bd1a4404b0b1e247f6ca40e383b7876c7615a1e9bebe2c91",
+  "assets/tinkerswood/mantle/colors.json": "ed7a2a0094f57701ea375e22a5ddedfec81fe737a087e7416d9e5ba083f2b87f"
+}
