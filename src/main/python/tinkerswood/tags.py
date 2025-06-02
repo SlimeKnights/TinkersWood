@@ -29,7 +29,7 @@ class TagGenerator:
     def __exit__(self, exc_type, exc_value, traceback) -> bool:
         for (domain, name), values in self.tags.items():
             # registry name is baked into the tag name
-            self.cache.saveJson({"values": values}, DATA_ROOT, domain, "tags", name)
+            self.cache.saveJson({"values": values}, DATA_ROOT, domain, "tags", name, sortKeys=True)
         
         self.time = perf_counter() - self.time
         logging.info(f"Generated {len(self.tags)} tags in {self.time} seconds")

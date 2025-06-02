@@ -51,7 +51,7 @@ if __name__ == "__main__":
           data["variant"]: "#" + data["palette"][234] for data in WOODS
         }
     }
-    cache.saveJson(colors, f"assets/{MOD_ID}/mantle/colors", sortKeys=False)
+    cache.saveJson(colors, f"assets/{MOD_ID}/mantle/colors")
     
     # tags ensure wood does not count default variant
     with TagGenerator(cache) as gen:

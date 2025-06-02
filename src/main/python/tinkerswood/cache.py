@@ -121,7 +121,7 @@ class CachedOutput:
             logging.debug(f"Skipping saving {path} as the file is unchanged")
     
     def saveJson(self, contents: Dict, path: str, *suffix: str, extension: str = ".json",
-                 sortKeys: bool = True) -> None:
+                 sortKeys: bool = False) -> None:
         """
         Saves a json object at the given path, assuming the file does not already exist with those contents.
         :param contents:  JSON object to save.

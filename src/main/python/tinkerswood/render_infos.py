@@ -64,6 +64,6 @@ class RenderInfoGenerator:
             "variant": True
           }
         }
-        self.cache.saveJson(data, ASSETS, "tconstruct", FOLDER, "wood", variant, sortKeys=False)
+        self.cache.saveJson(data, ASSETS, "tconstruct", FOLDER, "wood", variant)
         self.materials += 1
         
