@@ -1,3 +1,5 @@
-All generated textures exist inside of assets using the generate command.
+Files in this directory were generated.
 
-See https://github.com/SlimeKnights/TinkersConstruct/wiki/Texture-Generators-%28Data-Packs%29 for more info.
+Anything under `assets/*/textures` comes from the generate part textures command, see https://slimeknights.github.io/docs/commands/tinkers/generate-part-textures/ for more info.
+
+Anything else is generated through python, see `src/main/python` for code, specifically `src/main/python/woods.py`

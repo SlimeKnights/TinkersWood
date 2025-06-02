@@ -6,7 +6,7 @@ from tinkerswood.cache import CachedOutput
 from tinkerswood.logger import setupLogging
 
 # see tinkerswood/wood.py for a list of all wood variants
-from tinkerswood.woods import WOODS
+from woods import WOODS
 
 from tinkerswood.render_infos import RenderInfoGenerator
 from tinkerswood.tags import TagGenerator
