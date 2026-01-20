@@ -1,11 +1,12 @@
 {  
-  "_translators_comment": "Translated by Bytegm, DrHesperus, MuTBu",
-  
-  "material.tconstruct.wood.oak":      "Дубовая древесина",
-  "material.tconstruct.wood.spruce":   "Еловая древесина",
-  "material.tconstruct.wood.birch":    "Берёзовая древесина",
-  "material.tconstruct.wood.jungle":   "Тропическая древесина",
-  "material.tconstruct.wood.acacia":   "Акациевая древесина",
-  "material.tconstruct.wood.dark_oak": "Древесина тёмного дуба"
-}
+  "_translators_comment": "Обновлено и переведено пользователем deaddiesel",
 
+  "material.tconstruct.wood.oak":      "Дуб",
+  "material.tconstruct.wood.spruce":   "Ель",
+  "material.tconstruct.wood.birch":    "Берёза",
+  "material.tconstruct.wood.jungle":   "Тропическое дерево",
+  "material.tconstruct.wood.acacia":   "Акация",
+  "material.tconstruct.wood.dark_oak": "Тёмный дуб",
+  "material.tconstruct.wood.mangrove": "Мангровое дерево",
+  "material.tconstruct.wood.cherry":   "Вишня"
+}
