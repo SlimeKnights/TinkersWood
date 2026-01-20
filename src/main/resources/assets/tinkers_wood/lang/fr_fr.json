@@ -1,0 +1,11 @@
+{
+  "material.tconstruct.wood.oak":      "Bois de chêne",
+  "material.tconstruct.wood.spruce":   "Bois de sapin",
+  "material.tconstruct.wood.birch":    "Bois de bouleau",
+  "material.tconstruct.wood.jungle":   "Bois d'acajou",
+  "material.tconstruct.wood.acacia":   "Bois d'acacia",
+  "material.tconstruct.wood.dark_oak": "Bois de chêne noir",
+  "material.tconstruct.wood.mangrove": "Bois de palétuvier",
+  "material.tconstruct.wood.cherry":   "Bois de cerisier"
+}
+
